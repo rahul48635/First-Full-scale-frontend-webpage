@@ -1,0 +1,181 @@
+body{
+    background-color: rgb(41, 44, 42);
+    margin: 0%;
+    height: 100vh;
+}
+
+
+a{ 
+    color: antiquewhite;
+    background-color: #242b2e;
+    display: block;
+    margin: 20px;
+    border-bottom: 1px dashed #000000;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(124, 125, 126);
+}
+nav {
+    background-color: #242b2e;
+    width: 150px;
+    min-height: 100vh;
+    float: left;
+    margin: 0%;
+    margin-top: 0;
+    padding-top: 0;
+    position: fixed;
+    transform: translate(0%,-2%);
+    transition: all 1s ease-in-out;
+  }
+nav>img{
+    width: 100%;
+    background-color: rgb(42, 171, 251);
+}
+#div-h1{
+    display: flex;
+    color: rgb(129, 42, 251) ;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+#content_1{
+    color: rgb(217, 216, 214);
+    margin-left: 200px ;
+    margin-right: 100px;
+    text-align: left;
+
+}
+#img{
+    display: flex;
+    justify-content: center;
+}
+#div_h2{
+    color: rgb(129, 42, 251);
+    display: flex;
+    justify-content: center; 
+    
+}
+#content_2{
+    color: rgb(217, 216, 214);
+    margin-left: 200px ;
+    margin-right: 100px;
+    text-align: left;
+}
+
+#bot{
+    position:absolute;
+    right: 5px;
+    bottom: 10px;
+    position: fixed;
+}
+#bot img{
+    height: 80px;
+    width: 80px;
+}
+#bot button{
+    border-radius: 50%;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#00b7ff ;
+}
+
+/* part 2 modal */
+*{
+    padding: 0;
+    margin: 0;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.725);
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.container{
+    background-color: white;
+    border-radius: 12px;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    width: 500px;
+    height: 400px;
+    background-image:linear-gradient(90deg, rgb(88, 10, 243) 0%, rgb(255, 0, 212) 100%);
+    filter: drop-shadow(30px 20px 50px rgb(46, 214, 229));
+    transition: all 2s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+    
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+.modal{
+    opacity: 1;
+    top: 50%;
+    z-index: 2;
+}
+.name{
+    border-bottom: 1px solid black;
+
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.email{
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+}
+.contact{
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+
+}
+.msg{
+    border-bottom: 1px solid black;
+
+}
+.msg>input{
+
+    height: 180px;
+    width: 500px;
+}
+
+input{
+    border:linear-gradient(90deg, rgb(88, 10, 243) 0%, rgb(255, 0, 212) 100%);;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+}
+.btn>button{
+    background: rgb(88, 10, 243);
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 5px;
+}
+.img{
+    transform: scaleX(-1);
+    border-radius: 25px;
+    position: absolute;
+    bottom: 120px;
+    left: 5px;
+    justify-content: center;
+    align-items: center;
+    transform: scaleY(.3);
+    height: 100px;
+    width: 140px;
+    cursor: pointer;
+}
+.transition{
+    transition: all 2s ease-in-out;
+    transform: translate(-95%,-2%);
+}
